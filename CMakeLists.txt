@@ -34,10 +34,11 @@ add_executable(Test test.cpp)
 set(SFML_STATIC_LIBRARIES TRUE)
 
 #sets directory root for cmake
-set(SFML_DIR C:/SFML-2.6.1/lib/cmake/SFML)
+set(SFML_DIR C:/SFML-2.6.1-64bit/lib/cmake/SFML)
 
 find_package(SFML COMPONENTS system window graphics audio network REQUIRED)
-include_directories(C:/SFML-2.6.1/include)
+include_directories(C:/SFML-2.6.1-64bit/include)
+
 
 #targets the dll libraries
 target_link_libraries(Test sfml-system sfml-window sfml-graphics sfml-audio)
